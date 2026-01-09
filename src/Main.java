@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class Main {
 
@@ -18,8 +17,8 @@ public class Main {
         Director director2 = new Director("Сергей", "Новиков", Gender.MALE, 8);
 
         // Автор музыки и хореограф
-        String musicAuthor = "Петр Чайковский";
-        String choreographer = "Максим Петров";
+        Person musicAuthor = new Person("Петр", "Чайковский", Gender.MALE);
+        Person choreographer = new Person("Петр", "Чайковский", Gender.MALE);
 
         System.out.println("Часть 2. Добавляем спектакли\n");
 

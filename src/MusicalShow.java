@@ -1,20 +1,24 @@
 // Класс спектакль музыкальный
 public class MusicalShow extends Show {
-    String musicAuthor;
-    String librettoText;
+    private Person musicAuthor;
+    private String librettoText;
 
-    public MusicalShow(String title, int duration, Director director, String musicAuthor, String librettoText) {
+    public MusicalShow(String title, int duration, Director director, Person musicAuthor, String librettoText) {
         super(title, duration, director);
         this.musicAuthor = musicAuthor;
         this.librettoText = librettoText;
     }
 
-    public String getMusicAuthor() {
+    public Person getMusicAuthor() {
         return musicAuthor;
     }
 
     public String getLibrettoText() {
         return librettoText;
+    }
+
+    public void setMusicAuthor(Person musicAuthor) {
+        this.musicAuthor = musicAuthor;
     }
 
     // Печать либретто

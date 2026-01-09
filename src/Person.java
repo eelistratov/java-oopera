@@ -1,8 +1,8 @@
 // Класс Персона
 public class Person {
-    String name;
-    String surname;
-    Gender gender;
+    private String name;
+    private String surname;
+    private Gender gender;
 
     public Person(String name, String surname, Gender gender) {
         this.name = name;
