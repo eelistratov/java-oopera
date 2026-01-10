@@ -17,14 +17,14 @@ public class Actor extends Person {
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
-        if (!super.equals(obj)) return false;
-
         Actor actor = (Actor) obj;
-        return height == actor.height;
+        return height == actor.height &&
+                Objects.equals(getName(), actor.getName()) &&
+                Objects.equals(getSurname(), actor.getSurname());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), height);
+        return Objects.hash(getName(), getSurname(), height);
     }
 }
